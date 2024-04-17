@@ -21,7 +21,7 @@ COPY . .
 EXPOSE ${PORT}
 
 # Define the command to run your Node.js app with parameters
-CMD npm run build && \ 
-    PORT={$PORT} \
-    ENVIROMENT={$ENVIROMENT} \
+CMD npm run build && \
+    PORT=${PORT} \
+    ENVIRONMENT=${ENVIRONMENT} \
     npm start
